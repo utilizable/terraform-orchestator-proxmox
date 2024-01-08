@@ -1,11 +1,12 @@
-Terraform Module
+Terraform Orchestator Proxmox
 ============
-This repository serves as a terraform template for proxmox module development.
+This repository serves as a agregator and orcestrator for other proxmox modules.
 
 ## 🪜 Repository Structure
 > [utilizable/github-actions-semver-tagging](https://github.com/utilizable/github-actions-semver-tagging)
 >> [utilizable/terraform-module](https://github.com/utilizable/terraform-module)
 >>> [utilizable/terraform-module-proxmox](https://github.com/utilizable/terraform-module-proxmox)
+>>>> [utilizable/terraform-orchestator-proxmox](https://github.com/utilizable/terraform-orchestator-proxmox)
 
 ## Table of Contents
 - [Requirements](#-requirements)
@@ -31,16 +32,15 @@ Make sure you have installed both - latest docker and gnu make!
   2. adjust [.env](./build/.env)
   3. execute `make init`
 
-## 📔 Module Options
+## 📔 Modules
 <sup>[(Back to top)](#table-of-contents)</sup>
 
-Module is based on [example](https://registry.terraform.io/providers/) provider.
+List of modules that are included:
 
-#### Input Variables
-```tf
-# ./terraform/main.tf
-...
-```
+- [utilizable/terraform-module-proxmox-vm](https://github.com/utilizable/terraform-module-proxmox-vm)
+- [utilizable/terraform-module-proxmox-vlan](https://github.com/utilizable/terraform-module-proxmox-vlan)
+
+
 #### Environment Requirements
 ```ini
 # ./build/.env
